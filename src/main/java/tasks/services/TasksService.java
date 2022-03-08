@@ -16,6 +16,13 @@ public class TasksService {
         this.tasks = tasks;
     }
 
+    //de modificat lista observable
+    public void modifObservableList(Task task_v,Task task_n){
+        tasks.remove(task_v);
+        tasks.add(task_n);
+    }
+
+
 
     public ObservableList<Task> getObservableList(){
         return FXCollections.observableArrayList(tasks.getAll());

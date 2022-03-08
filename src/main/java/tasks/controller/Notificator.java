@@ -31,10 +31,16 @@ public class Notificator extends Thread {
                     if (t.isRepeated() && t.getEndTime().after(currentDate)){
 
                         Date next = t.nextTimeAfter(currentDate);
-                        long currentMinute = getTimeInMinutes(currentDate);
-                        long taskMinute = getTimeInMinutes(next);
-                        if (currentMinute == taskMinute){
-                            showNotification(t);
+                        //in caz ca nu s notificari
+                        try {
+                            long currentMinute = getTimeInMinutes(currentDate);
+                            long taskMinute = getTimeInMinutes(next);
+                            if (currentMinute == taskMinute) {
+                                showNotification(t);
+                            }
+                        }catch (Exception e)
+                        {
+                            System.out.println("fara notificari");
                         }
                     }
                     else {
