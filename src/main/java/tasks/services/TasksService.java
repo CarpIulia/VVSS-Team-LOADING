@@ -22,6 +22,12 @@ public class TasksService {
         tasks.add(task_n);
     }
 
+    //pentru adaugata in lista
+    public void addObservableList(Task task_n){
+
+        tasks.add(task_n);
+    }
+
 
 
     public ObservableList<Task> getObservableList(){

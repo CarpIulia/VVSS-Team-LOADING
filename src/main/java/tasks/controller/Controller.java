@@ -81,10 +81,11 @@ public class Controller {
     }
 
     @FXML
-    public void showTaskDialog(ActionEvent actionEvent){
+    //pentru editare task
+    public void showTaskDialogModif(ActionEvent actionEvent){
         Object source = actionEvent.getSource();
         NewEditController.setClickedButton((Button) source);
-        if((Task)mainTable.getSelectionModel().getSelectedItem()==null)
+        if((Task)mainTable.getSelectionModel().getSelectedItem()==null  )
         {
             Alert a=new Alert(Alert.AlertType.ERROR,"nu s a selectat nimic din lista");
             a.show();
@@ -96,6 +97,7 @@ public class Controller {
                 Parent root = loader.load();//getClass().getResource("/fxml/new-edit-task.fxml"));
                 NewEditController editCtrl = loader.getController();
                 editCtrl.setService(service);
+                editCtrl.setEditOrNew("modif");
                 editCtrl.setTasksList(tasksList);
                 editCtrl.setCurrentTask((Task) mainTable.getSelectionModel().getSelectedItem());
                 editNewStage.setScene(new Scene(root, 600, 350));
@@ -108,11 +110,42 @@ public class Controller {
             }
         }
     }
+
+
+
+    @FXML
+    //pentru new task
+    public void showTaskDialogNew(ActionEvent actionEvent){
+        Object source = actionEvent.getSource();
+        NewEditController.setClickedButton((Button) source);
+            try {
+                editNewStage = new Stage();
+                NewEditController.setCurrentStage(editNewStage);
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/new-edit-task.fxml"));
+                Parent root = loader.load();//getClass().getResource("/fxml/new-edit-task.fxml"));
+                NewEditController editCtrl = loader.getController();
+                editCtrl.setService(service);
+                editCtrl.setEditOrNew("add");
+                editCtrl.setTasksList(tasksList);
+                editCtrl.setCurrentTask((Task) mainTable.getSelectionModel().getSelectedItem());
+                editNewStage.setScene(new Scene(root, 600, 350));
+                editNewStage.setResizable(false);
+                editNewStage.initOwner(Main.primaryStage);
+                editNewStage.initModality(Modality.APPLICATION_MODAL);//??????
+                editNewStage.show();
+            } catch (IOException e) {
+                log.error("Error loading new-edit-task.fxml");
+            }
+
+    }
+
+
+
     @FXML
     public void deleteTask(){
         if((Task)mainTable.getSelectionModel().getSelectedItem()==null)
         {
-            Alert a=new Alert(Alert.AlertType.ERROR,"nu s a selectat nimic din lista");
+            Alert a=new Alert(Alert.AlertType.ERROR,"Nu s a selectat nimic din lista");
             a.show();
         }else {
             Task toDelete = (Task) tasks.getSelectionModel().getSelectedItem();
@@ -123,20 +156,23 @@ public class Controller {
     @FXML
     public void showDetailedInfo(){
         {
-            Alert a = new Alert(Alert.AlertType.ERROR, "nu s a selectat nimic din lista");
-            a.show();
-            try {
-                Stage stage = new Stage();
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/task-info.fxml"));
-                Parent root = loader.load();
-                stage.setScene(new Scene(root, 550, 350));
-                stage.setResizable(false);
-                stage.setTitle("Info");
-                stage.initModality(Modality.APPLICATION_MODAL);//??????
-                infoStage = stage;
-                stage.show();
-            } catch (IOException e) {
-                log.error("error loading task-info.fxml");
+            if ((Task) mainTable.getSelectionModel().getSelectedItem() == null) {
+                Alert a = new Alert(Alert.AlertType.ERROR, "Nu s a selectat nimic din lista");
+                a.show();
+            } else {
+                try {
+                    Stage stage = new Stage();
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/task-info.fxml"));
+                    Parent root = loader.load();
+                    stage.setScene(new Scene(root, 550, 350));
+                    stage.setResizable(false);
+                    stage.setTitle("Info");
+                    stage.initModality(Modality.APPLICATION_MODAL);//??????
+                    infoStage = stage;
+                    stage.show();
+                } catch (IOException e) {
+                    log.error("error loading task-info.fxml");
+                }
             }
         }
     }
@@ -153,7 +189,7 @@ public class Controller {
             updateCountLabel(observableTasks);
         }catch (Exception e)
         {
-                Alert a=new Alert(Alert.AlertType.ERROR,"trebuie completate fildurile");
+                Alert a=new Alert(Alert.AlertType.ERROR,"Trebuie completate toate campurile");
                 a.show();
         }
     }

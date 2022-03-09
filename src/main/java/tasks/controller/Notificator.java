@@ -66,7 +66,11 @@ public class Notificator extends Thread {
     public static void showNotification(Task task){
         log.info("push notification showing");
         Platform.runLater(() -> {
-            Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation();
+            try {
+                Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation();
+            }catch (Exception e) {
+                System.out.println("fereastra principala nu e deschisa pt a putea afisa notificarea");
+            }
         });
     }
     private static long getTimeInMinutes(Date date){

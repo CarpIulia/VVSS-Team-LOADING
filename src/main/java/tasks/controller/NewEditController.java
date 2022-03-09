@@ -41,6 +41,7 @@ public class NewEditController {
     private ObservableList<Task> tasksList;
     private TasksService service;
     private DateService dateService;
+    private String editOrNew;
     //private ArrayTaskList arrayList;
 
 
@@ -73,6 +74,11 @@ public class NewEditController {
     public void setService(TasksService service){
         this.service =service;
         this.dateService =new DateService(service);
+    }
+
+    public void setEditOrNew(String str)
+    {
+        this.editOrNew=str;
     }
 
     public void setCurrentTask(Task task){
@@ -145,24 +151,31 @@ public class NewEditController {
     @FXML
     public void saveChanges(){
         Task collectedFieldsTask = collectFieldsData();
-        // aici fac modificarea ca sa si dea update lista
-        service.modifObservableList(currentTask,collectedFieldsTask);
-        if (incorrectInputMade) return;
+        //intrebare lungine titlu
+        if(collectedFieldsTask.getTitle().length()>2 && collectedFieldsTask.getTitle().length()<101) {
+            // aici fac modificarea ca sa si dea update lista
+            if (editOrNew.equals("modif"))
+                service.modifObservableList(currentTask, collectedFieldsTask);
+            else service.addObservableList(collectedFieldsTask);
+            if (incorrectInputMade) return;
 
-        if (currentTask == null){//no task was chosen -> add button was pressed
-            tasksList.add(collectedFieldsTask);
-        }
-        else {
-            for (int i = 0; i < tasksList.size(); i++){
-                if (currentTask.equals(tasksList.get(i))){
-                    tasksList.set(i,collectedFieldsTask);
+            if (currentTask == null) {//no task was chosen -> add button was pressed
+                tasksList.add(collectedFieldsTask);
+            } else {
+                for (int i = 0; i < tasksList.size(); i++) {
+                    if (currentTask.equals(tasksList.get(i))) {
+                        tasksList.set(i, collectedFieldsTask);
+                    }
                 }
+                currentTask = null;
             }
-            currentTask = null;
-        }
-        TaskIO.rewriteFile(tasksList);
+            TaskIO.rewriteFile(tasksList);
 
-        Controller.editNewStage.close();
+            Controller.editNewStage.close();
+        }else{
+            Alert a=new Alert(Alert.AlertType.INFORMATION,"Lungimea titlului trebuie sa fie intre 3 si 100 de caractere");
+            a.show();
+        }
 
     }
     @FXML
