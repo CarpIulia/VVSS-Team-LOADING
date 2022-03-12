@@ -100,7 +100,8 @@ public class Task implements Serializable, Cloneable {
         if (isRepeated() && isActive()){
             Date timeBefore  = start;
             Date timeAfter = start;
-            if (current.before(start)){
+            //ca sa ia interval inchis
+            if (current.before(start)|| current.equals(start)){
                 return start;
             }
             if ((current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end))){

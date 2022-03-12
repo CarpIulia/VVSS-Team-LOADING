@@ -31,10 +31,16 @@ public class Notificator extends Thread {
                     if (t.isRepeated() && t.getEndTime().after(currentDate)){
 
                         Date next = t.nextTimeAfter(currentDate);
-                        long currentMinute = getTimeInMinutes(currentDate);
-                        long taskMinute = getTimeInMinutes(next);
-                        if (currentMinute == taskMinute){
-                            showNotification(t);
+                        //in caz ca nu s notificari
+                        try {
+                            long currentMinute = getTimeInMinutes(currentDate);
+                            long taskMinute = getTimeInMinutes(next);
+                            if (currentMinute == taskMinute) {
+                                showNotification(t);
+                            }
+                        }catch (Exception e)
+                        {
+                            System.out.println("fara notificari");
                         }
                     }
                     else {
@@ -60,7 +66,11 @@ public class Notificator extends Thread {
     public static void showNotification(Task task){
         log.info("push notification showing");
         Platform.runLater(() -> {
-            Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation();
+            try {
+                Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation();
+            }catch (Exception e) {
+                System.out.println("fereastra principala nu e deschisa pt a putea afisa notificarea");
+            }
         });
     }
     private static long getTimeInMinutes(Date date){

@@ -68,3 +68,291 @@
 2022-03-07 19:57:14 INFO  Controller:74 - Main controller initializing
 2022-03-07 19:57:17 INFO  NewEditController:91 - new/edit window initializing
 2022-03-07 19:59:16 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:01:36 INFO  Main:36 - saved data reading
+2022-03-08 19:01:36 INFO  Main:41 - application start
+2022-03-08 19:01:37 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:04:39 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:04:43 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:05:58 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:06:57 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:07:10 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:07:35 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:07:35 ERROR Controller:127 - error loading task-info.fxml
+2022-03-08 19:08:16 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:08:31 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:10:21 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:10:30 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:10:34 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:11:00 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:11:41 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:11:41 ERROR Controller:127 - error loading task-info.fxml
+2022-03-08 19:11:43 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:11:43 ERROR Controller:127 - error loading task-info.fxml
+2022-03-08 19:11:43 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:11:43 ERROR Controller:127 - error loading task-info.fxml
+2022-03-08 19:11:43 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:11:43 ERROR Controller:127 - error loading task-info.fxml
+2022-03-08 19:11:52 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:24:54 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:25:16 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:25:23 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:27:42 INFO  Main:36 - saved data reading
+2022-03-08 19:27:42 INFO  Main:41 - application start
+2022-03-08 19:27:43 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:32:31 INFO  Main:36 - saved data reading
+2022-03-08 19:32:31 INFO  Main:41 - application start
+2022-03-08 19:32:32 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:36:06 INFO  Main:36 - saved data reading
+2022-03-08 19:36:06 INFO  Main:41 - application start
+2022-03-08 19:36:07 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:41:04 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:41:13 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:41:17 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:41:22 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:41:43 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:42:34 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:42:48 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:42:51 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:43:27 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:43:29 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:43:33 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:43:38 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:43:40 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:43:47 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:43:56 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:44:24 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:44:31 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:48:12 INFO  Main:36 - saved data reading
+2022-03-08 19:48:12 INFO  Main:41 - application start
+2022-03-08 19:48:13 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:48:35 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:49:03 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:50:59 INFO  Main:36 - saved data reading
+2022-03-08 19:50:59 INFO  Main:41 - application start
+2022-03-08 19:50:59 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:51:02 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:51:21 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 19:51:34 INFO  Main:36 - saved data reading
+2022-03-08 19:51:34 INFO  Main:41 - application start
+2022-03-08 19:51:34 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:51:37 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 19:52:06 INFO  Main:36 - saved data reading
+2022-03-08 19:52:06 INFO  Main:41 - application start
+2022-03-08 19:52:07 INFO  Controller:74 - Main controller initializing
+2022-03-08 19:53:00 INFO  Main:36 - saved data reading
+2022-03-08 19:53:00 INFO  Main:41 - application start
+2022-03-08 19:53:00 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:03:13 INFO  Main:36 - saved data reading
+2022-03-08 20:03:13 INFO  Main:41 - application start
+2022-03-08 20:03:13 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:05:38 INFO  Main:36 - saved data reading
+2022-03-08 20:05:38 INFO  Main:41 - application start
+2022-03-08 20:05:38 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:09:27 INFO  Main:36 - saved data reading
+2022-03-08 20:09:27 INFO  Main:41 - application start
+2022-03-08 20:09:27 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:09:32 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 20:12:26 INFO  Main:36 - saved data reading
+2022-03-08 20:12:26 INFO  Main:41 - application start
+2022-03-08 20:12:26 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:14:29 INFO  Main:36 - saved data reading
+2022-03-08 20:14:29 INFO  Main:41 - application start
+2022-03-08 20:14:29 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:16:26 INFO  Main:36 - saved data reading
+2022-03-08 20:16:26 INFO  Main:41 - application start
+2022-03-08 20:16:27 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:17:12 INFO  Main:36 - saved data reading
+2022-03-08 20:17:12 INFO  Main:41 - application start
+2022-03-08 20:17:13 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:17:42 INFO  Main:36 - saved data reading
+2022-03-08 20:17:42 INFO  Main:41 - application start
+2022-03-08 20:17:42 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:18:48 INFO  Main:36 - saved data reading
+2022-03-08 20:18:48 INFO  Main:41 - application start
+2022-03-08 20:18:49 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:20:30 INFO  Main:36 - saved data reading
+2022-03-08 20:20:31 INFO  Main:41 - application start
+2022-03-08 20:20:31 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:21:33 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 20:24:56 INFO  Main:36 - saved data reading
+2022-03-08 20:24:56 INFO  Main:41 - application start
+2022-03-08 20:24:57 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:26:13 INFO  NewEditController:91 - new/edit window initializing
+2022-03-08 20:43:35 INFO  Main:36 - saved data reading
+2022-03-08 20:43:35 INFO  Main:41 - application start
+2022-03-08 20:43:35 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:43:41 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:43:45 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:44:38 INFO  Main:36 - saved data reading
+2022-03-08 20:44:38 INFO  Main:41 - application start
+2022-03-08 20:44:39 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:44:42 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:45:19 INFO  Main:36 - saved data reading
+2022-03-08 20:45:19 INFO  Main:41 - application start
+2022-03-08 20:45:20 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:45:23 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:46:02 INFO  Main:36 - saved data reading
+2022-03-08 20:46:02 INFO  Main:41 - application start
+2022-03-08 20:46:02 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:46:24 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:46:57 INFO  Main:36 - saved data reading
+2022-03-08 20:46:57 INFO  Main:41 - application start
+2022-03-08 20:46:57 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:48:09 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:53:32 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:54:18 INFO  NewEditController:93 - new/edit window initializing
+2022-03-08 20:56:29 INFO  Main:36 - saved data reading
+2022-03-08 20:56:29 INFO  Main:41 - application start
+2022-03-08 20:56:30 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:56:32 INFO  NewEditController:90 - new/edit window initializing
+2022-03-08 20:59:01 INFO  Main:36 - saved data reading
+2022-03-08 20:59:01 INFO  Main:41 - application start
+2022-03-08 20:59:02 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:59:36 INFO  Main:36 - saved data reading
+2022-03-08 20:59:36 INFO  Main:41 - application start
+2022-03-08 20:59:36 INFO  Controller:74 - Main controller initializing
+2022-03-08 20:59:48 INFO  NewEditController:90 - new/edit window initializing
+2022-03-08 21:04:34 INFO  TaskInfoController:25 - task info window initializing
+2022-03-08 21:09:28 INFO  Main:36 - saved data reading
+2022-03-08 21:09:28 INFO  Main:41 - application start
+2022-03-08 21:09:28 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:46:06 INFO  Main:36 - saved data reading
+2022-03-09 12:46:06 INFO  Main:41 - application start
+2022-03-09 12:46:06 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:47:04 INFO  Main:36 - saved data reading
+2022-03-09 12:47:04 INFO  Main:41 - application start
+2022-03-09 12:47:04 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:48:23 INFO  Main:36 - saved data reading
+2022-03-09 12:48:23 INFO  Main:41 - application start
+2022-03-09 12:48:24 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:48:50 INFO  NewEditController:90 - new/edit window initializing
+2022-03-09 12:50:03 INFO  NewEditController:90 - new/edit window initializing
+2022-03-09 12:50:13 INFO  NewEditController:90 - new/edit window initializing
+2022-03-09 12:54:25 INFO  Main:36 - saved data reading
+2022-03-09 12:54:25 INFO  Main:41 - application start
+2022-03-09 12:54:26 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:54:29 INFO  NewEditController:90 - new/edit window initializing
+2022-03-09 12:55:34 INFO  Main:36 - saved data reading
+2022-03-09 12:55:34 INFO  Main:41 - application start
+2022-03-09 12:55:35 INFO  Controller:74 - Main controller initializing
+2022-03-09 12:55:44 INFO  NewEditController:90 - new/edit window initializing
+2022-03-09 13:00:51 INFO  Main:36 - saved data reading
+2022-03-09 13:00:51 INFO  Main:41 - application start
+2022-03-09 13:00:52 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:00:58 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:01:43 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:02:13 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:02:28 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:03:13 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:05:45 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:05:56 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:06:23 INFO  Main:36 - saved data reading
+2022-03-09 13:06:23 INFO  Main:41 - application start
+2022-03-09 13:06:23 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:06:27 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:07:48 INFO  Main:36 - saved data reading
+2022-03-09 13:07:48 INFO  Main:41 - application start
+2022-03-09 13:07:48 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:07:56 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:09:00 INFO  Main:36 - saved data reading
+2022-03-09 13:09:00 INFO  Main:41 - application start
+2022-03-09 13:09:00 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:09:03 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:18:55 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:19:41 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:21:47 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:22:51 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:24:57 INFO  Main:36 - saved data reading
+2022-03-09 13:24:57 INFO  Main:41 - application start
+2022-03-09 13:24:57 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:25:10 INFO  Main:36 - saved data reading
+2022-03-09 13:25:10 INFO  Main:41 - application start
+2022-03-09 13:25:11 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:27:44 INFO  Main:36 - saved data reading
+2022-03-09 13:27:44 INFO  Main:41 - application start
+2022-03-09 13:27:45 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:27:49 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:27:54 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:28:01 INFO  TaskInfoController:25 - task info window initializing
+2022-03-09 13:28:05 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:28:45 INFO  Main:36 - saved data reading
+2022-03-09 13:28:45 INFO  Main:41 - application start
+2022-03-09 13:28:46 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:29:43 INFO  Notificator:67 - push notification showing
+2022-03-09 13:30:00 INFO  Main:36 - saved data reading
+2022-03-09 13:30:00 INFO  Main:41 - application start
+2022-03-09 13:30:01 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:30:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:31:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:32:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:33:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:34:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:35:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:36:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:37:02 INFO  Notificator:67 - push notification showing
+2022-03-09 13:37:40 INFO  Main:36 - saved data reading
+2022-03-09 13:37:40 INFO  Main:41 - application start
+2022-03-09 13:37:40 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:37:41 INFO  Notificator:67 - push notification showing
+2022-03-09 13:38:41 INFO  Notificator:67 - push notification showing
+2022-03-09 13:39:41 INFO  Notificator:67 - push notification showing
+2022-03-09 13:39:56 INFO  Main:36 - saved data reading
+2022-03-09 13:39:56 INFO  Main:41 - application start
+2022-03-09 13:39:57 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:39:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:40:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:41:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:42:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:43:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:44:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:45:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:46:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:47:58 INFO  Notificator:67 - push notification showing
+2022-03-09 13:48:46 INFO  Main:36 - saved data reading
+2022-03-09 13:48:46 INFO  Main:41 - application start
+2022-03-09 13:48:46 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:48:48 INFO  Notificator:67 - push notification showing
+2022-03-09 13:49:04 INFO  Main:36 - saved data reading
+2022-03-09 13:49:04 INFO  Main:41 - application start
+2022-03-09 13:49:05 INFO  Controller:74 - Main controller initializing
+2022-03-09 13:49:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:49:13 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 13:50:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:51:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:52:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:53:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:54:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:55:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:56:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:57:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:58:06 INFO  Notificator:67 - push notification showing
+2022-03-09 13:59:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:00:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:01:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:02:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:03:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:04:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:05:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:06:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:07:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:08:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:09:06 INFO  Notificator:67 - push notification showing
+2022-03-09 14:09:09 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 14:11:16 INFO  Main:36 - saved data reading
+2022-03-09 14:11:16 INFO  Main:41 - application start
+2022-03-09 14:11:17 INFO  Controller:74 - Main controller initializing
+2022-03-09 14:11:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:11:23 INFO  NewEditController:96 - new/edit window initializing
+2022-03-09 14:12:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:13:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:14:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:15:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:16:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:17:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:18:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:19:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:20:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:21:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:22:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:23:18 INFO  Notificator:67 - push notification showing
+2022-03-09 14:24:18 INFO  Notificator:67 - push notification showing
