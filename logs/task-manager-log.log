@@ -361,3 +361,6 @@
 2022-03-13 17:17:02 INFO  Main:36 - saved data reading
 2022-03-13 17:17:02 INFO  Main:41 - application start
 2022-03-13 17:17:02 INFO  MainWindowController:73 - Main controller initializing
+2022-03-13 19:17:17 INFO  Main:36 - saved data reading
+2022-03-13 19:17:17 INFO  Main:41 - application start
+2022-03-13 19:17:18 INFO  MainWindowController:73 - Main controller initializing

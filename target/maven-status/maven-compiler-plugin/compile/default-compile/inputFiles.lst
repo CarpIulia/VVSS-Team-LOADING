@@ -1,6 +1,8 @@
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\services\DateService.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\model\TaskList.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\view\Main.java
+C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\controller\MainWindowController.java
+C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\validators\TaskValidator.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\model\TasksOperations.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\controller\TaskInfoController.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\model\ArrayTaskList.java
@@ -8,6 +10,5 @@ C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\m
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\services\TaskIO.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\controller\NewEditController.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\model\LinkedTaskList.java
-C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\controller\Controller.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\controller\Notificator.java
 C:\Users\debor\OneDrive\Documents\GitHub\VVSS-Team-LOADING\src\main\java\tasks\services\TasksService.java
