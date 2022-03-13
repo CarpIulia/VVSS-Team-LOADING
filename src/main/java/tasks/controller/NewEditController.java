@@ -10,10 +10,8 @@ import javafx.scene.control.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
-import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
 import tasks.services.TasksService;
 
 import java.io.IOException;
@@ -88,6 +86,12 @@ public class NewEditController {
                 break;
             case "btnEdit" : initEditWindow("Edit Task");
                 break;
+            default:
+            {
+                Alert a=new Alert(Alert.AlertType.ERROR,"Id-ul butonului nu corespunde.");
+                a.show();
+            }
+
         }
     }
 
@@ -151,7 +155,7 @@ public class NewEditController {
     @FXML
     public void saveChanges(){
         Task collectedFieldsTask = collectFieldsData();
-        //intrebare lungine titlu
+
         if(collectedFieldsTask.getTitle().length()>2 && collectedFieldsTask.getTitle().length()<101) {
             // aici fac modificarea ca sa si dea update lista
             if (editOrNew.equals("modif"))
@@ -169,9 +173,8 @@ public class NewEditController {
                 }
                 currentTask = null;
             }
-            TaskIO.rewriteFile(tasksList);
 
-            Controller.editNewStage.close();
+            MainWindowController.editNewStage.close();
         }else{
             Alert a=new Alert(Alert.AlertType.INFORMATION,"Lungimea titlului trebuie sa fie intre 3 si 100 de caractere");
             a.show();
@@ -180,7 +183,7 @@ public class NewEditController {
     }
     @FXML
     public void closeDialogWindow(){
-        Controller.editNewStage.close();
+        MainWindowController.editNewStage.close();
     }
 
     private Task collectFieldsData(){

@@ -15,7 +15,6 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
 import tasks.services.TasksService;
 import tasks.view.Main;
 
@@ -24,8 +23,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Controller {
-    private static final Logger log = Logger.getLogger(Controller.class.getName());
+public class MainWindowController {
+    private static final Logger log = Logger.getLogger(MainWindowController.class.getName());
     public ObservableList<Task> tasksList;
     TasksService service;
     DateService dateService;
@@ -33,10 +32,10 @@ public class Controller {
     public static Stage editNewStage;
     public static Stage infoStage;
 
-    public static TableView mainTable;
+    public static TableView<Task> mainTable;
 
     @FXML
-    public  TableView tasks;
+    public  TableView<Task> tasks;
     @FXML
     private TableColumn<Task, String> columnTitle;
     @FXML
@@ -150,7 +149,7 @@ public class Controller {
         }else {
             Task toDelete = (Task) tasks.getSelectionModel().getSelectedItem();
             tasksList.remove(toDelete);
-            TaskIO.rewriteFile(tasksList);
+            service.deleteObservableList(toDelete);
         }
     }
     @FXML

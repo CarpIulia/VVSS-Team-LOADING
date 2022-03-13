@@ -2,7 +2,9 @@ package tasks.model;
 
 import org.apache.log4j.Logger;
 import tasks.services.TaskIO;
+import tasks.validators.TaskValidator;
 
+import javax.xml.validation.Validator;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,7 +24,7 @@ public class Task implements Serializable, Cloneable {
         return sdf;
     }
     public Task(String title, Date time){
-        if (time.getTime() < 0) {
+        if (!TaskValidator.validateSimple(time)) {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
         }
@@ -32,13 +34,9 @@ public class Task implements Serializable, Cloneable {
         this.end = time;
     }
     public Task(String title, Date start, Date end, int interval){
-        if (start.getTime() < 0 || end.getTime() < 0) {
+        if (!TaskValidator.validateRepeated(start, end, interval)) {
             log.error("time below bound");
-            throw new IllegalArgumentException("Time cannot be negative");
-        }
-        if (interval < 1) {
-            log.error("interval < than 1");
-            throw new IllegalArgumentException("interval should me > 1");
+            throw new IllegalArgumentException("Time or interval cant't be negative");
         }
         this.title = title;
         this.start = start;
@@ -172,14 +170,17 @@ public class Task implements Serializable, Cloneable {
                 ", active=" + active +
                 '}';
     }
-    @Override
-    protected Task clone() throws CloneNotSupportedException {
-        Task task  = (Task)super.clone();
-        task.time = (Date)this.time.clone();
-        task.start = (Date)this.start.clone();
-        task.end = (Date)this.end.clone();
-        return task;
+
+    public Task(Task task) {
+        this.active = task.active;
+        this.end = task.end;
+        this.interval = task.interval;
+        this.start = task.start;
+        this.time = task.time;
+        this.title = task.title;
+
     }
+
 }
 
 

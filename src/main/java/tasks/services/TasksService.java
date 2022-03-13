@@ -20,12 +20,19 @@ public class TasksService {
     public void modifObservableList(Task task_v,Task task_n){
         tasks.remove(task_v);
         tasks.add(task_n);
+        TaskIO.rewriteFile(tasks);
     }
 
     //pentru adaugata in lista
     public void addObservableList(Task task_n){
 
         tasks.add(task_n);
+        TaskIO.rewriteFile(tasks);
+    }
+
+    public void deleteObservableList(Task task) {
+        tasks.remove(task);
+        TaskIO.rewriteFile(tasks);
     }
 
 

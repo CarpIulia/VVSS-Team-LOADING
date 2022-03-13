@@ -2,6 +2,7 @@ package tasks.services;
 
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
+import tasks.model.ArrayTaskList;
 import tasks.model.LinkedTaskList;
 import tasks.model.Task;
 import tasks.model.TaskList;
@@ -18,11 +19,11 @@ public class TaskIO {
     private static final int secondsInDay = 86400;
     private static final int secondsInHour = 3600;
     private static final int secondsInMin = 60;
+    private static final String readWriteErr = "IO exception reading or writing file";
 
     private static final Logger log = Logger.getLogger(TaskIO.class.getName());
     public static void write(TaskList tasks, OutputStream out) throws IOException {
-        DataOutputStream dataOutputStream = new DataOutputStream(out);
-        try {
+        try(DataOutputStream dataOutputStream = new DataOutputStream(out)) {
             dataOutputStream.writeInt(tasks.size());
             for (Task t : tasks){
                 dataOutputStream.writeInt(t.getTitle().length());
@@ -37,9 +38,6 @@ public class TaskIO {
                     dataOutputStream.writeLong(t.getTime().getTime());
                 }
             }
-        }
-        finally {
-            dataOutputStream.close();
         }
     }
     public static void read(TaskList tasks, InputStream in)throws IOException {
@@ -75,7 +73,7 @@ public class TaskIO {
             write(tasks,fos);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            log.error(readWriteErr);
         }
         finally {
             fos.close();
@@ -89,7 +87,7 @@ public class TaskIO {
             read(tasks, fis);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            log.error(readWriteErr);
         }
         finally {
             fis.close();
@@ -124,7 +122,7 @@ public class TaskIO {
             write(tasks, fileWriter);
         }
         catch (IOException e ){
-            log.error("IO exception reading or writing file");
+            log.error(readWriteErr);
         }
         finally {
             fileWriter.close();
@@ -296,7 +294,20 @@ public class TaskIO {
             TaskIO.writeBinary(taskList, Main.savedTasksFile);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            log.error(readWriteErr);
+        }
+    }
+
+    public static void rewriteFile(ArrayTaskList tasks) {
+        LinkedTaskList taskList = new LinkedTaskList();
+        for (Task t : tasks){
+            taskList.add(t);
+        }
+        try {
+            TaskIO.writeBinary(taskList, Main.savedTasksFile);
+        }
+        catch (IOException e){
+            log.error(readWriteErr);
         }
     }
 }
