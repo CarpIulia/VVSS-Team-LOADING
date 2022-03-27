@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
+import tasks.validators.TaskValidator;
 
 import java.util.Date;
 
@@ -24,8 +25,15 @@ public class TasksService {
     }
 
     //pentru adaugata in lista
-    public void addObservableList(Task task_n){
 
+    /**
+     * The function adds a new task in the task list
+     * @param task_n(titlu, start, end, interval)
+     * start, end >= 0 interval >= 0
+     */
+    public void addObservableList(Task task_n){
+        if(!TaskValidator.ValidateTask(task_n))
+            throw new IllegalArgumentException("Time or interval can't be negative");
         tasks.add(task_n);
         TaskIO.rewriteFile(tasks);
     }
@@ -40,6 +48,13 @@ public class TasksService {
     public ObservableList<Task> getObservableList(){
         return FXCollections.observableArrayList(tasks.getAll());
     }
+
+    /**
+     * The function transforms the given interval in a hh:MM formatt where
+     * hh = hours and MM = minutes
+     * @param task - the task that repeats after an interval ( repeatInterval > 0 )
+     * @return formatted interval
+     */
     public String getIntervalInHours(Task task){
         int seconds = task.getRepeatInterval();
         int minutes = seconds / DateService.SECONDS_IN_MINUTE;
@@ -68,7 +83,6 @@ public class TasksService {
     public Iterable<Task> filterTasks(Date start, Date end){
         TasksOperations tasksOps = new TasksOperations(getObservableList());
         Iterable<Task> filtered = tasksOps.incoming(start,end);
-        //Iterable<Task> filtered = tasks.incoming(start, end);
 
         return filtered;
     }

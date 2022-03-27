@@ -24,20 +24,12 @@ public class Task implements Serializable, Cloneable {
         return sdf;
     }
     public Task(String title, Date time){
-        if (!TaskValidator.validateSimple(time)) {
-            log.error("time below bound");
-            throw new IllegalArgumentException("Time cannot be negative");
-        }
         this.title = title;
         this.time = time;
         this.start = time;
         this.end = time;
     }
     public Task(String title, Date start, Date end, int interval){
-        if (!TaskValidator.validateRepeated(start, end, interval)) {
-            log.error("time below bound");
-            throw new IllegalArgumentException("Time or interval cant't be negative");
-        }
         this.title = title;
         this.start = start;
         this.end = end;
@@ -79,7 +71,7 @@ public class Task implements Serializable, Cloneable {
         return end;
     }
     public int getRepeatInterval(){
-        return interval > 0 ? interval : 0;
+        return interval;
     }
 
     public void setTime(Date start, Date end, int interval){

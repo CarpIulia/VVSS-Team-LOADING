@@ -1,14 +1,14 @@
 package tasks.validators;
 
+import tasks.model.Task;
+
 import java.util.Date;
 
 public class TaskValidator {
-    public static boolean validateSimple(Date time) {
-        return !(time.getTime() < 0);
-    }
-
-    public static boolean validateRepeated(Date start, Date end, int interval) {
-        if (start.getTime() < 0 || end.getTime() < 0 || interval < 1)
+    public static boolean ValidateTask(Task task) {
+        if (task.getStartTime().getTime() < 0 || task.getEndTime().getTime() < 0)
+            return false;
+        if(task.isRepeated() && task.getRepeatInterval() < 0)
             return false;
         return true;
     }
