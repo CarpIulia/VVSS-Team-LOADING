@@ -14,14 +14,20 @@ public class TasksOperations {
     }
 
     public Iterable<Task> incoming(Date start, Date end){
-        System.out.println(start);
-        System.out.println(end);
+        //System.out.println(start);
+        //System.out.println(end);
         ArrayList<Task> incomingTasks = new ArrayList<>();
-        for (Task t : tasks) {
-            Date nextTime = t.nextTimeAfter(start);
-            if (nextTime != null && (nextTime.before(end) || nextTime.equals(end))) {
-                incomingTasks.add(t);
-                System.out.println(t.getTitle());
+        for(int i=0;i<tasks.size();i++) {
+            Date nextTime = tasks.get(i).nextTimeAfter(start);
+            if (nextTime != null) {
+                if (nextTime.before(end)) {
+                    incomingTasks.add(tasks.get(i));
+                    System.out.println(tasks.get(i).getTitle());
+                }
+                if (nextTime.equals(end)) {
+                    incomingTasks.add(tasks.get(i));
+                    System.out.println(tasks.get(i).getTitle());
+                }
             }
         }
         return incomingTasks;

@@ -377,3 +377,20 @@
 2022-03-25 17:34:30 INFO  Main:36 - saved data reading
 2022-03-25 17:34:30 INFO  Main:41 - application start
 2022-03-25 17:34:31 INFO  MainWindowController:73 - Main controller initializing
+2022-04-08 15:20:17 INFO  Main:36 - saved data reading
+2022-04-08 15:20:17 INFO  Main:41 - application start
+2022-04-08 15:20:18 INFO  MainWindowController:73 - Main controller initializing
+2022-04-08 15:20:27 INFO  NewEditController:100 - new/edit window initializing
+2022-04-08 15:21:07 INFO  TaskInfoController:25 - task info window initializing
+2022-04-08 15:22:38 INFO  Main:36 - saved data reading
+2022-04-08 15:22:38 INFO  Main:41 - application start
+2022-04-08 15:22:39 INFO  MainWindowController:73 - Main controller initializing
+2022-04-08 15:22:54 INFO  Main:36 - saved data reading
+2022-04-08 15:22:54 INFO  Main:41 - application start
+2022-04-08 15:22:54 INFO  MainWindowController:73 - Main controller initializing
+2022-04-08 15:24:09 INFO  Main:36 - saved data reading
+2022-04-08 15:24:09 INFO  Main:41 - application start
+2022-04-08 15:24:09 INFO  MainWindowController:73 - Main controller initializing
+2022-04-08 16:29:55 INFO  Main:36 - saved data reading
+2022-04-08 16:29:55 INFO  Main:41 - application start
+2022-04-08 16:29:56 INFO  MainWindowController:73 - Main controller initializing
