@@ -13,6 +13,11 @@ public class TasksOperations {
         tasks.addAll(tasksList);
     }
 
+    public TasksOperations(List<Task> tasksList) {
+        tasks = new ArrayList<>();
+        tasks.addAll(tasksList);
+    }
+
     public Iterable<Task> incoming(Date start, Date end){
         //System.out.println(start);
         //System.out.println(end);
