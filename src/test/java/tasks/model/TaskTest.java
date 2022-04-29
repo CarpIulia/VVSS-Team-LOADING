@@ -34,4 +34,16 @@ class TaskTest {
     @AfterEach
     void tearDown() {
     }
+
+    @Test
+    void getRepeatInterval() {
+    }
+
+    @Test
+    void isRepeated() {
+    }
+
+    @Test
+    void getFormattedRepeated() {
+    }
 }

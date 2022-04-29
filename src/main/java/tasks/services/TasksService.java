@@ -42,6 +42,10 @@ public class TasksService {
         tasks.remove(task);
         TaskIO.rewriteFile(tasks);
     }
+    ArrayTaskList getAllTasks()
+    {
+        return tasks;
+    }
 
 
 
