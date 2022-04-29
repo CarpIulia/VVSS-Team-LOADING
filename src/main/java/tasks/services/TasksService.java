@@ -35,12 +35,12 @@ public class TasksService {
         if(!TaskValidator.ValidateTask(task_n))
             throw new IllegalArgumentException("Time or interval can't be negative");
         tasks.add(task_n);
-        TaskIO.rewriteFile(tasks);
+        //TaskIO.rewriteFile(tasks);
     }
 
     public void deleteObservableList(Task task) {
         tasks.remove(task);
-        TaskIO.rewriteFile(tasks);
+        //TaskIO.rewriteFile(tasks);
     }
     ArrayTaskList getAllTasks()
     {
