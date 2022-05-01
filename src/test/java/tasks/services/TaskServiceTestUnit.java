@@ -23,7 +23,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
 
-class IntergrareArrayListTest {
+class TaskServiceTestUnit {
 
     //@Mock
     private ArrayTaskList arrayTaskList;
